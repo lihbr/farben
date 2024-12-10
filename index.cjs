@@ -8,5 +8,5 @@ export function alpha(hexa, alpha = 1) {
 }
 
 exports.default = farben
-exports.pkg = farben
+exports.farben = farben
 exports.alpha = alpha

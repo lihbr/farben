@@ -1,4 +1,4 @@
-import farben from "./farben.json"
+import farben from "./farben.json" with { type: "json" }
 
 // eslint-disable-next-line ts/explicit-module-boundary-types
 export function alpha(hexa, alpha = 1) {
