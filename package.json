@@ -1,0 +1,57 @@
+{
+	"name": "@lihbr/farben",
+	"type": "module",
+	"version": "0.0.0",
+	"packageManager": "pnpm@9.15.0",
+	"description": "Colors of lihbr",
+	"author": "Lucie Haberer <hello@lihbr.com> (https://lihbr.com)",
+	"license": "MIT",
+	"homepage": "https://github.com/lihbr/farben",
+	"repository": {
+		"type": "git",
+		"url": "ssh://git@github.com/lihbr/farben.git"
+	},
+	"keywords": [
+		"lihbr",
+		"farben"
+	],
+	"sideEffects": false,
+	"exports": {
+		".": {
+			"import": {
+				"types": "./index.d.ts",
+				"default": "./index.js"
+			},
+			"require": {
+				"types": "./index.d.ts",
+				"default": "./index.cjs"
+			}
+		},
+		"./package.json": "./package.json"
+	},
+	"main": "./index.cjs",
+	"module": "./index.js",
+	"types": "./index.d.ts",
+	"files": [
+		"farben.json",
+		"index.cjs",
+		"index.d.ts",
+		"index.js"
+	],
+	"scripts": {
+		"build": "exit 0",
+		"dev": "exit 0",
+		"release": "npm run test && bumpp",
+		"release:dry": "npx changelogithub --dry",
+		"lint": "eslint .",
+		"typecheck": "tsc --noEmit",
+		"unit": "exit 0",
+		"test": "pnpm lint && pnpm typecheck && pnpm unit && pnpm build"
+	},
+	"devDependencies": {
+		"@lihbr/eslint-config": "^0.0.3",
+		"bumpp": "^9.9.0",
+		"eslint": "^9.16.0",
+		"typescript": "^5.7.2"
+	}
+}
