@@ -6,4 +6,3 @@ export function alpha(hexa, alpha = 1) {
 }
 
 export { farben }
-export default farben;
