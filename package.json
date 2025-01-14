@@ -1,7 +1,7 @@
 {
 	"name": "@lihbr/farben",
 	"type": "module",
-	"version": "0.0.2",
+	"version": "0.1.0",
 	"packageManager": "pnpm@9.15.0",
 	"description": "Colors of lihbr",
 	"author": "Lucie Haberer <hello@lihbr.com> (https://lihbr.com)",
